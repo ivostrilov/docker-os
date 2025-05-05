@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: personal-oracle-linux-9
+    networks:
+      - my_network
+    volumes:
+      - .:/app
+
+networks:
+  my_network:
